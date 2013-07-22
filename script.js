@@ -80,12 +80,12 @@ var margin = {
     left: 50
 };
 
-var width = $(window).width() - margin.left - margin.right - 40;
-//Next line only needed to counteract some strange results on the bl.ocks.org site
-if(width <= 0) width = 850;
-var height = $(window).height() - margin.top - margin.bottom - 80;
-//Next line only needed to counteract some strange results on the bl.ocks.org site
-if(height <= 0) height = 350;
+//The next lines should be run, but this seems to go wrong on the first load in bl.ocks.org
+//var width = $(window).width() - margin.left - margin.right - 40;
+//var height = $(window).height() - margin.top - margin.bottom - 80;
+//So I set it fixed to:
+var width = 850;
+var height = 350;
 
 //The number of columns and rows of the heatmap
 var MapColumns = 30,
