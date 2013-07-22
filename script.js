@@ -65,7 +65,7 @@ var truePoints = [];
 for (var i = 0; i < MapRows; i++) {
     for (var j = 0; j < MapColumns; j++) {
         points.push([hexRadius * j * 1.75, hexRadius * i * 1.5]);
-		truePoints.push([hexRadius * j * Math.sqrt(3), hexRadius * i * 1.5]);
+	truePoints.push([hexRadius * j * Math.sqrt(3), hexRadius * i * 1.5]);
     }//for j
 }//for i
 
@@ -151,9 +151,9 @@ for (var i = 0; i < neighbour.length; i++) {
 ///////////////////////////////////////////////////////////////////////////
 
 var lineFunction = d3.svg.line()
-				  .x(function(d) {return d[0];})
-				  .y(function(d) {return d[1];})
-				  .interpolate("linear");
+		  .x(function(d) {return d[0];})
+		  .y(function(d) {return d[1];})
+		  .interpolate("linear");
 				  
 var Counter = 0;
 //Loop over the linedata and draw each line
