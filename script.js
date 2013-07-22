@@ -93,7 +93,9 @@ var MapColumns = 30,
 	
 //The maximum radius the hexagons can have to still fit the screen
 var hexRadius = d3.min([width/(Math.sqrt(3)*(MapColumns+3)),
-						height/((MapRows+3)*1.5)]);
+			height/((MapRows+3)*1.5)]);
+						
+console.log(hexRadius);
 						
 //Set the new height and width based on the max possible
 width = MapColumns*hexRadius*Math.sqrt(3);
