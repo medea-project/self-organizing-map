@@ -78,7 +78,8 @@ var margin = {
     right: 20,
     bottom: 20,
     left: 50
-},
+};
+
 var width = $(window).width() - margin.left - margin.right - 40;
 //Next line only needed to counteract some strange results on the bl.ocks.org site
 if(width <= 0) width = 850;
